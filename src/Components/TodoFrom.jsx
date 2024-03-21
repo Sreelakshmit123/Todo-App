@@ -13,12 +13,8 @@ const TodoForm = () => {
 
   return (
     <div className='ms-5' >
-      <input style={{padding:'11px'}} type="text"
-        value={newTodo}
-        placeholder='Add todo'
-        onChange={(e) => setNewTodo(e.target.value)}
-      />
-      <button className='ms-5 btn btn-info' onClick={handleAddTodo}>Submit</button>
+      <input style={{padding:'11px'}} type="text" value={newTodo} placeholder='Add todo...' onChange={(e) => setNewTodo(e.target.value)}/>
+      <button className='ms-5 btn btn-danger' onClick={handleAddTodo}>Submit</button>
     </div>
   );
 };
